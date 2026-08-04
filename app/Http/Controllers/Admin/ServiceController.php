@@ -55,7 +55,7 @@ class ServiceController extends Controller
         Service::create($data);
 
         return redirect()
-            ->route('admin.services.index')
+            ->route('Admin.services.index')
             ->with('success', 'Service added successfully.');
     }
 
@@ -103,7 +103,7 @@ class ServiceController extends Controller
         $service->update($data);
 
         return redirect()
-            ->route('admin.services.index')
+            ->route('Admin.services.index')
             ->with('success', 'Service updated successfully.');
     }
 
@@ -119,7 +119,7 @@ class ServiceController extends Controller
         $service->delete();
 
         return redirect()
-            ->route('admin.services.index')
+            ->route('Admin.services.index')
             ->with('success', 'Service deleted successfully.');
     }
 }

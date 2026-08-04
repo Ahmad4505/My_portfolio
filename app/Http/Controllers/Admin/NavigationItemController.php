@@ -42,7 +42,7 @@ class NavigationItemController extends Controller
         ]);
 
         return redirect()
-            ->route('admin.navigation-items.index')
+            ->route('Admin.navigation-items.index')
             ->with('success', 'Navigation item added successfully.');
     }
 
@@ -73,7 +73,7 @@ class NavigationItemController extends Controller
         ]);
 
         return redirect()
-            ->route('admin.navigation-items.index')
+            ->route('Admin.navigation-items.index')
             ->with('success', 'Navigation item updated successfully.');
     }
 
@@ -82,7 +82,7 @@ class NavigationItemController extends Controller
         $navigationItem->delete();
 
         return redirect()
-            ->route('admin.navigation-items.index')
+            ->route('Admin.navigation-items.index')
             ->with('success', 'Navigation item deleted successfully.');
     }
 }

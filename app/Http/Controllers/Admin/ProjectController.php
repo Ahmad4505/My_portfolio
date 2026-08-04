@@ -103,7 +103,7 @@ class ProjectController extends Controller
         Project::create($data);
 
         return redirect()
-            ->route('admin.projects.index')
+            ->route('Admin.projects.index')
             ->with('success', 'Project added successfully.');
     }
 
@@ -204,7 +204,7 @@ class ProjectController extends Controller
         $project->update($data);
 
         return redirect()
-            ->route('admin.projects.index')
+            ->route('Admin.projects.index')
             ->with('success', 'Project updated successfully.');
     }
 
@@ -244,7 +244,7 @@ class ProjectController extends Controller
         $project->delete();
 
         return redirect()
-            ->route('admin.projects.index')
+            ->route('Admin.projects.index')
             ->with('success', 'Project deleted successfully.');
     }
 

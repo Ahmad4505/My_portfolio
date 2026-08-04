@@ -39,7 +39,7 @@ class SkillController extends Controller
         ]);
 
         return redirect()
-            ->route('admin.skills.index')
+            ->route('Admin.skills.index')
             ->with('success', 'Skill added successfully.');
     }
 
@@ -65,7 +65,7 @@ class SkillController extends Controller
         ]);
 
         return redirect()
-            ->route('admin.skills.index')
+            ->route('Admin.skills.index')
             ->with('success', 'Skill updated successfully.');
     }
 
@@ -74,7 +74,7 @@ class SkillController extends Controller
         $skill->delete();
 
         return redirect()
-            ->route('admin.skills.index')
+            ->route('Admin.skills.index')
             ->with('success', 'Skill deleted successfully.');
     }
 }

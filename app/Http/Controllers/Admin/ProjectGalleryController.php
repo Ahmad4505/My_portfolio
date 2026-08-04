@@ -49,7 +49,7 @@ class ProjectGalleryController extends Controller
         }
 
         return redirect()
-            ->route('admin.projects.gallery.index', $project)
+            ->route('Admin.projects.gallery.index', $project)
             ->with('success', 'Project images uploaded successfully.');
     }
 
@@ -71,7 +71,7 @@ class ProjectGalleryController extends Controller
         $projectImag->delete();
 
         return redirect()
-            ->route('admin.projects.gallery.index', $project)
+            ->route('Admin.projects.gallery.index', $project)
             ->with('success', 'Project image deleted successfully.');
     }
 }

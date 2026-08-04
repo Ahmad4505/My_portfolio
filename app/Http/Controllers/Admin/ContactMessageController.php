@@ -43,7 +43,7 @@ class ContactMessageController extends Controller
         ]);
 
         return redirect()
-            ->route('admin.messages.index')
+            ->route('Admin.messages.index')
             ->with('success', 'Message marked as unread.');
     }
 
@@ -52,7 +52,7 @@ class ContactMessageController extends Controller
         $message->delete();
 
         return redirect()
-            ->route('admin.messages.index')
+            ->route('Admin.messages.index')
             ->with('success', 'Message deleted successfully.');
     }
 }

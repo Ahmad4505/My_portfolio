@@ -87,7 +87,7 @@ class TestimonialController extends Controller
         Testimonial::create($data);
 
         return redirect()
-            ->route('admin.testimonials.index')
+            ->route('Admin.testimonials.index')
             ->with('success', 'Testimonial added successfully.');
     }
 
@@ -172,7 +172,7 @@ class TestimonialController extends Controller
         $testimonial->update($data);
 
         return redirect()
-            ->route('admin.testimonials.index')
+            ->route('Admin.testimonials.index')
             ->with('success', 'Testimonial updated successfully.');
     }
 
@@ -187,7 +187,7 @@ class TestimonialController extends Controller
             : 'Testimonial is now hidden.';
 
         return redirect()
-            ->route('admin.testimonials.index')
+            ->route('Admin.testimonials.index')
             ->with('success', $message);
     }
 
@@ -204,7 +204,7 @@ class TestimonialController extends Controller
         $testimonial->delete();
 
         return redirect()
-            ->route('admin.testimonials.index')
+            ->route('Admin.testimonials.index')
             ->with('success', 'Testimonial deleted successfully.');
     }
 }

@@ -96,7 +96,7 @@ class CallToActionController extends Controller
         $cta->save();
 
         return redirect()
-            ->route('admin.cta.edit')
+            ->route('Admin.cta.edit')
             ->with(
                 'success',
                 'Call to action section updated successfully.'

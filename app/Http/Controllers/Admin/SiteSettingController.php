@@ -156,7 +156,7 @@ class SiteSettingController extends Controller
         $setting->save();
 
         return redirect()
-            ->route('admin.site-settings.edit')
+            ->route('Admin.site-settings.edit')
             ->with('success', 'Site settings updated successfully.');
     }
 

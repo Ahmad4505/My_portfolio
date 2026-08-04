@@ -67,7 +67,7 @@ class SocialLinkController extends Controller
         ]);
 
         return redirect()
-            ->route('admin.social-links.index')
+            ->route('Admin.social-links.index')
             ->with('success', 'Social link added successfully.');
     }
 
@@ -123,7 +123,7 @@ class SocialLinkController extends Controller
         ]);
 
         return redirect()
-            ->route('admin.social-links.index')
+            ->route('Admin.social-links.index')
             ->with('success', 'Social link updated successfully.');
     }
 
@@ -134,7 +134,7 @@ class SocialLinkController extends Controller
         ]);
 
         return redirect()
-            ->route('admin.social-links.index')
+            ->route('Admin.social-links.index')
             ->with(
                 'success',
                 $socialLink->is_active
@@ -148,7 +148,7 @@ class SocialLinkController extends Controller
         $socialLink->delete();
 
         return redirect()
-            ->route('admin.social-links.index')
+            ->route('Admin.social-links.index')
             ->with('success', 'Social link deleted successfully.');
     }
 }

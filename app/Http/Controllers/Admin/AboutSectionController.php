@@ -57,7 +57,7 @@ class AboutSectionController extends Controller
         $about->save();
 
         return redirect()
-            ->route('admin.about.edit')
+            ->route('Admin.about.edit')
             ->with('success', 'About section updated successfully.');
     }
 }

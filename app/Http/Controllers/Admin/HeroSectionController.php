@@ -97,7 +97,7 @@ class HeroSectionController extends Controller
         $hero->save();
 
         return redirect()
-            ->route('admin.hero.edit')
+            ->route('Admin.hero.edit')
             ->with('success', 'Hero section updated successfully.');
     }
 
