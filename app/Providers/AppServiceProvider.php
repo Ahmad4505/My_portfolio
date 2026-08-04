@@ -9,6 +9,7 @@ use App\Models\ContactMe;
 use Illuminate\Support\ServiceProvider;
 use App\Models\Social;
 use App\Models\CallToAction;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Pagination\Paginator;
 
 class AppServiceProvider extends ServiceProvider
@@ -26,6 +27,11 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+
+        if (app()->environment('production')) {
+            URL::forceScheme('https');
+        }
+
         Paginator::useBootstrapFive();
 
         View::composer('User.*', function ($view) {
