@@ -18,7 +18,7 @@
 
         </div>
 
-        <a href="{{ route('admin.social-links.create') }}"
+        <a href="{{ route('Admin.social-links.create') }}"
             class="btn btn-primary shadow-sm">
 
             <i class="fas fa-plus mr-1"></i>
@@ -154,7 +154,7 @@
                                     <div class="d-flex justify-content-center align-items-center">
 
                                         <form action="{{ route(
-                                            'admin.social-links.toggle-status',
+                                            'Admin.social-links.toggle-status',
                                             $socialLink
                                         ) }}"
                                             method="POST"
@@ -180,7 +180,7 @@
                                         </form>
 
                                         <a href="{{ route(
-                                            'admin.social-links.edit',
+                                            'Admin.social-links.edit',
                                             $socialLink
                                         ) }}"
                                             class="btn btn-warning btn-sm mr-1"
@@ -191,7 +191,7 @@
                                         </a>
 
                                         <form action="{{ route(
-                                            'admin.social-links.destroy',
+                                            'Admin.social-links.destroy',
                                             $socialLink
                                         ) }}"
                                             method="POST"
@@ -232,7 +232,7 @@
                                         No social links found
                                     </h5>
 
-                                    <a href="{{ route('admin.social-links.create') }}"
+                                    <a href="{{ route('Admin.social-links.create') }}"
                                         class="btn btn-primary mt-2">
 
                                         Add First Social Link

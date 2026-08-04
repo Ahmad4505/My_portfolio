@@ -10,7 +10,7 @@
             Navbar Items
         </h1>
 
-        <a href="{{ route('admin.navigation-items.create') }}"
+        <a href="{{ route('Admin.navigation-items.create') }}"
             class="btn btn-primary">
 
             <i class="fas fa-plus mr-1"></i>
@@ -103,14 +103,14 @@
 
                                 <td>
 
-                                    <a href="{{ route('admin.navigation-items.edit', $item) }}"
+                                    <a href="{{ route('Admin.navigation-items.edit', $item) }}"
                                         class="btn btn-warning btn-sm">
 
                                         <i class="fas fa-edit"></i>
 
                                     </a>
 
-                                    <form action="{{ route('admin.navigation-items.destroy', $item) }}"
+                                    <form action="{{ route('Admin.navigation-items.destroy', $item) }}"
                                         method="POST"
                                         class="d-inline">
 

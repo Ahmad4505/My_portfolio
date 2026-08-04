@@ -16,7 +16,7 @@
 
         <div class="card-body">
 
-            <form action="{{ route('admin.navigation-items.update', $navigationItem) }}"
+            <form action="{{ route('Admin.navigation-items.update', $navigationItem) }}"
                 method="POST">
 
                 @csrf
@@ -109,7 +109,7 @@
 
                 </button>
 
-                <a href="{{ route('admin.navigation-items.index') }}"
+                <a href="{{ route('Admin.navigation-items.index') }}"
                     class="btn btn-secondary">
 
                     Cancel

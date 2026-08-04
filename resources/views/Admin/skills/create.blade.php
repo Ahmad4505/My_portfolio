@@ -16,7 +16,7 @@
 
         <div class="card-body">
 
-            <form action="{{ route('admin.skills.store') }}"
+            <form action="{{ route('Admin.skills.store') }}"
                 method="POST">
 
                 @csrf
@@ -120,7 +120,7 @@
 
                 </button>
 
-                <a href="{{ route('admin.skills.index') }}"
+                <a href="{{ route('Admin.skills.index') }}"
                     class="btn btn-secondary">
 
                     Cancel

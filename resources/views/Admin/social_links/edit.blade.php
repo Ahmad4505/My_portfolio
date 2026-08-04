@@ -17,7 +17,7 @@
         <div class="card-body">
 
             <form action="{{ route(
-                'admin.social-links.update',
+                'Admin.social-links.update',
                 $socialLink
             ) }}"
                 method="POST">
@@ -138,7 +138,7 @@
 
                 </button>
 
-                <a href="{{ route('admin.social-links.index') }}"
+                <a href="{{ route('Admin.social-links.index') }}"
                     class="btn btn-secondary">
 
                     Cancel

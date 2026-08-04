@@ -73,7 +73,7 @@
 
             <div class="card-body">
 
-                <form action="{{ route('admin.hero.update') }}"
+                <form action="{{ route('Admin.hero.update') }}"
                     method="POST"
                     enctype="multipart/form-data">
 

@@ -130,7 +130,7 @@
 
                                     <div class="d-flex justify-content-center align-items-center">
 
-                                        <a href="{{ route('admin.messages.show', $message) }}"
+                                        <a href="{{ route('Admin.messages.show', $message) }}"
                                             class="btn btn-info btn-sm mr-1"
                                             title="View">
 
@@ -140,7 +140,7 @@
 
                                         @if ($message->is_read)
 
-                                            <form action="{{ route('admin.messages.mark-unread', $message) }}"
+                                            <form action="{{ route('Admin.messages.mark-unread', $message) }}"
                                                 method="POST"
                                                 class="m-0 mr-1">
 
@@ -159,7 +159,7 @@
 
                                         @endif
 
-                                        <form action="{{ route('admin.messages.destroy', $message) }}"
+                                        <form action="{{ route('Admin.messages.destroy', $message) }}"
                                             method="POST"
                                             class="m-0">
 

@@ -18,7 +18,7 @@
 
         </div>
 
-        <a href="{{ route('admin.projects.index') }}"
+        <a href="{{ route('Admin.projects.index') }}"
             class="btn btn-secondary">
 
             <i class="fas fa-arrow-left mr-1"></i>
@@ -89,7 +89,7 @@
 
             <form
                 action="{{ route(
-                    'admin.projects.gallery.store',
+                    'Admin.projects.gallery.store',
                     $project
                 ) }}"
                 method="POST"
@@ -166,7 +166,7 @@
 
                                 <form
                                     action="{{ route(
-                                        'admin.projects.gallery.destroy',
+                                        'Admin.projects.gallery.destroy',
                                         [$project, $image]
                                     ) }}"
                                     method="POST">

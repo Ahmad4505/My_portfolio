@@ -77,7 +77,7 @@
 
     @endif
 
-    <form action="{{ route('admin.cta.update') }}"
+    <form action="{{ route('Admin.cta.update') }}"
         method="POST"
         enctype="multipart/form-data">
 

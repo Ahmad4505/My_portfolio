@@ -35,7 +35,7 @@
         {{-- Projects --}}
         <div class="col-xl-3 col-md-6 mb-4">
 
-            <a href="{{ route('admin.projects.index') }}"
+            <a href="{{ route('Admin.projects.index') }}"
                 class="text-decoration-none">
 
                 <div class="card border-left-primary shadow h-100 py-2">
@@ -73,7 +73,7 @@
         {{-- Skills --}}
         <div class="col-xl-3 col-md-6 mb-4">
 
-            <a href="{{ route('admin.skills.index') }}"
+            <a href="{{ route('Admin.skills.index') }}"
                 class="text-decoration-none">
 
                 <div class="card border-left-success shadow h-100 py-2">
@@ -111,7 +111,7 @@
         {{-- Services --}}
         <div class="col-xl-3 col-md-6 mb-4">
 
-            <a href="{{ route('admin.services.index') }}"
+            <a href="{{ route('Admin.services.index') }}"
                 class="text-decoration-none">
 
                 <div class="card border-left-info shadow h-100 py-2">
@@ -149,7 +149,7 @@
         {{-- Messages --}}
         <div class="col-xl-3 col-md-6 mb-4">
 
-            <a href="{{ route('admin.messages.index') }}"
+            <a href="{{ route('Admin.messages.index') }}"
                 class="text-decoration-none">
 
                 <div class="card border-left-warning shadow h-100 py-2">
@@ -202,7 +202,7 @@
         {{-- Testimonials --}}
         <div class="col-xl-3 col-md-6 mb-4">
 
-            <a href="{{ route('admin.testimonials.index') }}"
+            <a href="{{ route('Admin.testimonials.index') }}"
                 class="text-decoration-none">
 
                 <div class="card border-left-danger shadow h-100 py-2">
@@ -252,7 +252,7 @@
                         Latest Messages
                     </h6>
 
-                    <a href="{{ route('admin.messages.index') }}"
+                    <a href="{{ route('Admin.messages.index') }}"
                         class="btn btn-primary btn-sm">
 
                         View All
@@ -320,7 +320,7 @@
 
                                         <td>
 
-                                            <a href="{{ route('admin.messages.show', $message) }}"
+                                            <a href="{{ route('Admin.messages.show', $message) }}"
                                                 class="btn btn-info btn-sm">
 
                                                 <i class="fas fa-eye"></i>
@@ -369,7 +369,7 @@
                         Latest Projects
                     </h6>
 
-                    <a href="{{ route('admin.projects.index') }}"
+                    <a href="{{ route('Admin.projects.index') }}"
                         class="btn btn-primary btn-sm">
 
                         View All
@@ -416,7 +416,7 @@
 
                             </div>
 
-                            <a href="{{ route('admin.projects.edit', $project) }}"
+                            <a href="{{ route('Admin.projects.edit', $project) }}"
                                 class="btn btn-warning btn-sm">
 
                                 <i class="fas fa-edit"></i>

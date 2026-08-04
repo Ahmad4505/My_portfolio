@@ -10,7 +10,7 @@
             Skills
         </h1>
 
-        <a href="{{ route('admin.skills.create') }}"
+        <a href="{{ route('Admin.skills.create') }}"
             class="btn btn-primary shadow-sm">
 
             <i class="fas fa-plus mr-1"></i>
@@ -122,14 +122,14 @@
 
                                 <td>
 
-                                    <a href="{{ route('admin.skills.edit', $skill) }}"
+                                    <a href="{{ route('Admin.skills.edit', $skill) }}"
                                         class="btn btn-warning btn-sm">
 
                                         <i class="fas fa-edit"></i>
 
                                     </a>
 
-                                    <form action="{{ route('admin.skills.destroy', $skill) }}"
+                                    <form action="{{ route('Admin.skills.destroy', $skill) }}"
                                         method="POST"
                                         class="d-inline">
 
@@ -160,7 +160,7 @@
 
                                     <h5>No skills found</h5>
 
-                                    <a href="{{ route('admin.skills.create') }}"
+                                    <a href="{{ route('Admin.skills.create') }}"
                                         class="btn btn-primary mt-2">
 
                                         Add First Skill

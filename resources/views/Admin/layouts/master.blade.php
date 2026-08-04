@@ -33,14 +33,14 @@
     <div id="wrapper">
 
         {{-- Sidebar --}}
-        @include('admin.partials.sidebar')
+        @include('Admin.partials.sidebar')
 
         <div id="content-wrapper" class="d-flex flex-column">
 
             <div id="content">
 
                 {{-- Topbar --}}
-                @include('admin.partials.topbar')
+                @include('Admin.partials.topbar')
 
                 {{-- Page Content --}}
                 <div class="container-fluid">
@@ -52,7 +52,7 @@
             </div>
 
             {{-- Footer --}}
-            @include('admin.partials.footer')
+            @include('Admin.partials.footer')
 
         </div>
 

@@ -16,7 +16,7 @@
 
         <div class="card-body">
 
-            <form action="{{ route('admin.social-links.store') }}"
+            <form action="{{ route('Admin.social-links.store') }}"
                 method="POST">
 
                 @csrf
@@ -137,7 +137,7 @@
 
                 </button>
 
-                <a href="{{ route('admin.social-links.index') }}"
+                <a href="{{ route('Admin.social-links.index') }}"
                     class="btn btn-secondary">
 
                     Cancel

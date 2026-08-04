@@ -1,7 +1,7 @@
 <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
     {{-- Sidebar Brand --}}
-    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('admin.dashboard') }}">
+    <a class="sidebar-brand d-flex align-items-center justify-content-center" href="{{ route('Admin.dashboard') }}">
 
         <div class="sidebar-brand-icon rotate-n-15">
             <i class="fas fa-code"></i>
@@ -16,9 +16,9 @@
     <hr class="sidebar-divider my-0">
 
     {{-- Dashboard --}}
-    <li class="nav-item {{ request()->routeIs('admin.dashboard') ? 'active' : '' }}">
+    <li class="nav-item {{ request()->routeIs('Admin.dashboard') ? 'active' : '' }}">
 
-        <a class="nav-link" href="{{ route('admin.dashboard') }}">
+        <a class="nav-link" href="{{ route('Admin.dashboard') }}">
 
             <i class="fas fa-fw fa-tachometer-alt"></i>
 
@@ -54,34 +54,34 @@
                     Main Sections
                 </h6>
 
-                <a class="collapse-item" href="{{ route('admin.navigation-items.index') }}">
+                <a class="collapse-item" href="{{ route('Admin.navigation-items.index') }}">
                     Navbar Items
                 </a>
 
                 {{-- لم يتم إنشاء Routes لها بعد --}}
-                <a class="collapse-item" href="{{ route('admin.hero.edit') }}">
+                <a class="collapse-item" href="{{ route('Admin.hero.edit') }}">
                     Hero Section
                 </a>
 
                 <a class="collapse-item
-                    {{ request()->routeIs('admin.about.*') ? 'active' : '' }}"
-                    href="{{ route('admin.about.edit') }}">
+                    {{ request()->routeIs('Admin.about.*') ? 'active' : '' }}"
+                    href="{{ route('Admin.about.edit') }}">
 
                     About Section
 
                 </a>
 
                 <a class="collapse-item
-                        {{ request()->routeIs('admin.skills.*') ? 'active' : '' }}"
-                    href="{{ route('admin.skills.index') }}">
+                        {{ request()->routeIs('Admin.skills.*') ? 'active' : '' }}"
+                    href="{{ route('Admin.skills.index') }}">
 
                     Skills
 
                 </a>
 
                 <a class="collapse-item
-                    {{ request()->routeIs('admin.services.*') ? 'active' : '' }}"
-                    href="{{ route('admin.services.index') }}">
+                    {{ request()->routeIs('Admin.services.*') ? 'active' : '' }}"
+                    href="{{ route('Admin.services.index') }}">
 
                     Services
 
@@ -112,16 +112,16 @@
 
             <div class="bg-white py-2 collapse-inner rounded">
 
-                <a class="collapse-item {{ request()->routeIs('admin.testimonials.*') ? 'active' : '' }}"
-                    href="{{ route('admin.testimonials.index') }}">
+                <a class="collapse-item {{ request()->routeIs('Admin.testimonials.*') ? 'active' : '' }}"
+                    href="{{ route('Admin.testimonials.index') }}">
 
                     Testimonials
 
                 </a>
 
                 <a class="collapse-item
-    {{ request()->routeIs('admin.social-links.*') ? 'active' : '' }}"
-                    href="{{ route('admin.social-links.index') }}">
+    {{ request()->routeIs('Admin.social-links.*') ? 'active' : '' }}"
+                    href="{{ route('Admin.social-links.index') }}">
 
                     Social Links
 
@@ -129,8 +129,8 @@
 
 
                 <a class="collapse-item
-                    {{ request()->routeIs('admin.cta.*') ? 'active' : '' }}"
-                    href="{{ route('admin.cta.edit') }}">
+                    {{ request()->routeIs('Admin.cta.*') ? 'active' : '' }}"
+                    href="{{ route('Admin.cta.edit') }}">
 
                     Call To Action
 
@@ -143,9 +143,9 @@
     </li>
 
     {{-- Contact Messages --}}
-    <li class="nav-item {{ request()->routeIs('admin.messages.*') ? 'active' : '' }}">
+    <li class="nav-item {{ request()->routeIs('Admin.messages.*') ? 'active' : '' }}">
 
-        <a class="nav-link" href="{{ route('admin.messages.index') }}">
+        <a class="nav-link" href="{{ route('Admin.messages.index') }}">
 
             <i class="fas fa-fw fa-envelope"></i>
 
@@ -156,9 +156,9 @@
     </li>
 
     {{-- Site Settings --}}
-    <li class="nav-item {{ request()->routeIs('admin.site-settings.*') ? 'active' : '' }}">
+    <li class="nav-item {{ request()->routeIs('Admin.site-settings.*') ? 'active' : '' }}">
 
-        <a class="nav-link" href="{{ route('admin.site-settings.edit') }}">
+        <a class="nav-link" href="{{ route('Admin.site-settings.edit') }}">
 
             <i class="fas fa-fw fa-cogs"></i>
 
@@ -188,10 +188,10 @@
     </li>
 
     {{-- Projects Page --}}
-    <li class="nav-item {{ request()->routeIs('admin.projects.*') ? 'active' : '' }}">
+    <li class="nav-item {{ request()->routeIs('Admin.projects.*') ? 'active' : '' }}">
 
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProjects"
-            aria-expanded="{{ request()->routeIs('admin.projects.*') ? 'true' : 'false' }}"
+            aria-expanded="{{ request()->routeIs('Admin.projects.*') ? 'true' : 'false' }}"
             aria-controls="collapseProjects">
 
             <i class="fas fa-fw fa-project-diagram"></i>
@@ -200,7 +200,7 @@
 
         </a>
 
-        <div id="collapseProjects" class="collapse {{ request()->routeIs('admin.projects.*') ? 'show' : '' }}"
+        <div id="collapseProjects" class="collapse {{ request()->routeIs('Admin.projects.*') ? 'show' : '' }}"
             data-parent="#accordionSidebar">
 
             <div class="bg-white py-2 collapse-inner rounded">
@@ -216,16 +216,16 @@
                 </a>
 
                 <a class="collapse-item
-                {{ request()->routeIs('admin.projects.index') ? 'active' : '' }}"
-                    href="{{ route('admin.projects.index') }}">
+                {{ request()->routeIs('Admin.projects.index') ? 'active' : '' }}"
+                    href="{{ route('Admin.projects.index') }}">
 
                     Manage Projects
 
                 </a>
 
                 <a class="collapse-item
-                {{ request()->routeIs('admin.projects.create') ? 'active' : '' }}"
-                    href="{{ route('admin.projects.create') }}">
+                {{ request()->routeIs('Admin.projects.create') ? 'active' : '' }}"
+                    href="{{ route('Admin.projects.create') }}">
 
                     Add Project
 

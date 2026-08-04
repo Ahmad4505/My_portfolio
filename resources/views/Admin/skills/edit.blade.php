@@ -16,7 +16,7 @@
 
         <div class="card-body">
 
-            <form action="{{ route('admin.skills.update', $skill) }}"
+            <form action="{{ route('Admin.skills.update', $skill) }}"
                 method="POST">
 
                 @csrf
@@ -116,7 +116,7 @@
 
                 </button>
 
-                <a href="{{ route('admin.skills.index') }}"
+                <a href="{{ route('Admin.skills.index') }}"
                     class="btn btn-secondary">
 
                     Cancel

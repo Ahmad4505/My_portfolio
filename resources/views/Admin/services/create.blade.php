@@ -16,7 +16,7 @@
 
         <div class="card-body">
 
-            <form action="{{ route('admin.services.store') }}"
+            <form action="{{ route('Admin.services.store') }}"
                 method="POST"
                 enctype="multipart/form-data">
 
@@ -161,7 +161,7 @@
 
                 </button>
 
-                <a href="{{ route('admin.services.index') }}"
+                <a href="{{ route('Admin.services.index') }}"
                     class="btn btn-secondary">
 
                     Cancel

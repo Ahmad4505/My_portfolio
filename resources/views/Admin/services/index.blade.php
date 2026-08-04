@@ -10,7 +10,7 @@
             Services
         </h1>
 
-        <a href="{{ route('admin.services.create') }}"
+        <a href="{{ route('Admin.services.create') }}"
             class="btn btn-primary shadow-sm">
 
             <i class="fas fa-plus mr-1"></i>
@@ -148,14 +148,14 @@
 
                                 <td>
 
-                                    <a href="{{ route('admin.services.edit', $service) }}"
+                                    <a href="{{ route('Admin.services.edit', $service) }}"
                                         class="btn btn-warning btn-sm">
 
                                         <i class="fas fa-edit"></i>
 
                                     </a>
 
-                                    <form action="{{ route('admin.services.destroy', $service) }}"
+                                    <form action="{{ route('Admin.services.destroy', $service) }}"
                                         method="POST"
                                         class="d-inline">
 
@@ -186,7 +186,7 @@
 
                                     <h5>No services found</h5>
 
-                                    <a href="{{ route('admin.services.create') }}"
+                                    <a href="{{ route('Admin.services.create') }}"
                                         class="btn btn-primary mt-2">
 
                                         Add First Service

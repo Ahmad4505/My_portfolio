@@ -18,7 +18,7 @@
 
         </div>
 
-        <a href="{{ route('admin.messages.index') }}"
+        <a href="{{ route('Admin.messages.index') }}"
             class="btn btn-secondary">
 
             <i class="fas fa-arrow-left mr-1"></i>
@@ -81,7 +81,7 @@
 
                         @endif
 
-                        <form action="{{ route('admin.messages.mark-unread', $message) }}"
+                        <form action="{{ route('Admin.messages.mark-unread', $message) }}"
                             method="POST"
                             class="mr-2 mb-2">
 
@@ -98,7 +98,7 @@
 
                         </form>
 
-                        <form action="{{ route('admin.messages.destroy', $message) }}"
+                        <form action="{{ route('Admin.messages.destroy', $message) }}"
                             method="POST"
                             class="mb-2">
 

@@ -16,7 +16,7 @@
             </p>
         </div>
 
-        <a href="{{ route('admin.projects.create') }}" class="btn btn-primary shadow-sm">
+        <a href="{{ route('Admin.projects.create') }}" class="btn btn-primary shadow-sm">
 
             <i class="fas fa-plus mr-1"></i>
             Add Project
@@ -165,7 +165,7 @@
 
                                     </a>
 
-                                    <a href="{{ route('admin.projects.gallery.index', $project) }}"
+                                    <a href="{{ route('Admin.projects.gallery.index', $project) }}"
                                         class="btn btn-primary btn-sm" title="Project Gallery">
 
                                         <i class="fas fa-images"></i>
@@ -174,7 +174,7 @@
 
 
                                     {{-- تعديل --}}
-                                    <a href="{{ route('admin.projects.edit', $project) }}" class="btn btn-warning btn-sm"
+                                    <a href="{{ route('Admin.projects.edit', $project) }}" class="btn btn-warning btn-sm"
                                         title="Edit">
 
                                         <i class="fas fa-edit"></i>
@@ -182,7 +182,7 @@
                                     </a>
 
                                     {{-- حذف --}}
-                                    <form action="{{ route('admin.projects.destroy', $project) }}" method="POST"
+                                    <form action="{{ route('Admin.projects.destroy', $project) }}" method="POST"
                                         class="d-inline">
 
                                         @csrf
@@ -217,7 +217,7 @@
                                         Add your first project to display it on the portfolio.
                                     </p>
 
-                                    <a href="{{ route('admin.projects.create') }}" class="btn btn-primary mt-2">
+                                    <a href="{{ route('Admin.projects.create') }}" class="btn btn-primary mt-2">
 
                                         <i class="fas fa-plus mr-1"></i>
                                         Add First Project

@@ -29,7 +29,7 @@
         <li class="nav-item dropdown no-arrow mx-1">
 
     <a class="nav-link"
-        href="{{ route('admin.messages.index') }}"
+        href="{{ route('Admin.messages.index') }}"
         role="button"
         aria-label="Messages">
 

@@ -13,7 +13,7 @@
             Hero Section
         </h1>
 
-        <a href="{{ route('admin.hero.create') }}"
+        <a href="{{ route('Admin.hero.create') }}"
             class="btn btn-primary shadow-sm">
 
             <i class="fas fa-plus mr-1"></i>
@@ -157,7 +157,7 @@
                                 <td>
 
                                     <a
-                                        href="{{ route('admin.hero.edit',$hero->id) }}"
+                                        href="{{ route('Admin.hero.edit',$hero->id) }}"
                                         class="btn btn-warning btn-sm">
 
                                         <i class="fas fa-edit"></i>
@@ -165,7 +165,7 @@
                                     </a>
 
                                     <form
-                                        action="{{ route('admin.hero.destroy',$hero->id) }}"
+                                        action="{{ route('Admin.hero.destroy',$hero->id) }}"
                                         method="POST"
                                         class="d-inline">
 
@@ -204,7 +204,7 @@
                                         </h5>
 
                                         <a
-                                            href="{{ route('admin.hero.create') }}"
+                                            href="{{ route('Admin.hero.create') }}"
                                             class="btn btn-primary mt-3">
 
                                             Add First Hero

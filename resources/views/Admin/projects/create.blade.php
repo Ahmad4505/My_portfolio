@@ -10,7 +10,7 @@
             Add Project
         </h1>
 
-        <a href="{{ route('admin.projects.index') }}"
+        <a href="{{ route('Admin.projects.index') }}"
             class="btn btn-secondary">
 
             <i class="fas fa-arrow-left mr-1"></i>
@@ -60,7 +60,7 @@
 
         <div class="card-body">
 
-            <form action="{{ route('admin.projects.store') }}"
+            <form action="{{ route('Admin.projects.store') }}"
                 method="POST"
                 enctype="multipart/form-data">
 
@@ -304,7 +304,7 @@
 
                 </button>
 
-                <a href="{{ route('admin.projects.index') }}"
+                <a href="{{ route('Admin.projects.index') }}"
                     class="btn btn-secondary">
 
                     Cancel
