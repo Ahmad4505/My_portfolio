@@ -17,7 +17,7 @@
         <div class="card-body">
 
             <form
-                action="{{ route('admin.testimonials.store') }}"
+                action="{{ route('Admin.testimonials.store') }}"
                 method="POST"
                 enctype="multipart/form-data">
 
@@ -217,7 +217,7 @@
                 </button>
 
                 <a
-                    href="{{ route('admin.testimonials.index') }}"
+                    href="{{ route('Admin.testimonials.index') }}"
                     class="btn btn-secondary">
 
                     Cancel

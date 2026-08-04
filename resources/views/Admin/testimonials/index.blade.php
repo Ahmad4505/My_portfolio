@@ -19,7 +19,7 @@
         </div>
 
         <a
-            href="{{ route('admin.testimonials.create') }}"
+            href="{{ route('Admin.testimonials.create') }}"
             class="btn btn-primary shadow-sm">
 
             <i class="fas fa-plus mr-1"></i>
@@ -218,7 +218,7 @@
                                     {{-- Toggle Visibility --}}
                                     <form
                                         action="{{ route(
-                                            'admin.testimonials.toggle-status',
+                                            'Admin.testimonials.toggle-status',
                                             $testimonial
                                         ) }}"
                                         method="POST"
@@ -247,7 +247,7 @@
                                     {{-- Edit --}}
                                     <a
                                         href="{{ route(
-                                            'admin.testimonials.edit',
+                                            'Admin.testimonials.edit',
                                             $testimonial
                                         ) }}"
                                         class="btn btn-warning btn-sm"
@@ -260,7 +260,7 @@
                                     {{-- Delete --}}
                                     <form
                                         action="{{ route(
-                                            'admin.testimonials.destroy',
+                                            'Admin.testimonials.destroy',
                                             $testimonial
                                         ) }}"
                                         method="POST"
@@ -300,7 +300,7 @@
                                     </h5>
 
                                     <a
-                                        href="{{ route('admin.testimonials.create') }}"
+                                        href="{{ route('Admin.testimonials.create') }}"
                                         class="btn btn-primary mt-2">
 
                                         Add First Testimonial

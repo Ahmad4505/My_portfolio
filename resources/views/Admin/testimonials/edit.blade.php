@@ -18,7 +18,7 @@
 
             <form
                 action="{{ route(
-                    'admin.testimonials.update',
+                    'Admin.testimonials.update',
                     $testimonial
                 ) }}"
                 method="POST"
@@ -239,7 +239,7 @@
                 </button>
 
                 <a
-                    href="{{ route('admin.testimonials.index') }}"
+                    href="{{ route('Admin.testimonials.index') }}"
                     class="btn btn-secondary">
 
                     Cancel
