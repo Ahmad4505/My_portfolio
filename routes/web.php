@@ -63,7 +63,7 @@ Route::get('/download-cv', [CvController::class, 'download'])
 
 Route::middleware(['auth'])
     ->prefix('admin')
-    ->name('admin.')
+    ->name('Admin.')
     ->group(function () {
 
         Route::get('/dashboard', [DashboardController::class, 'index'])
