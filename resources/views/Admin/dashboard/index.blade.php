@@ -18,9 +18,7 @@
 
         </div>
 
-        <a href="{{ route('home') }}"
-            target="_blank"
-            class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
+        <a href="{{ route('home') }}" target="_blank" class="d-none d-sm-inline-block btn btn-sm btn-primary shadow-sm">
 
             <i class="fas fa-eye fa-sm text-white-50 mr-1"></i>
             View Website
@@ -35,8 +33,7 @@
         {{-- Projects --}}
         <div class="col-xl-3 col-md-6 mb-4">
 
-            <a href="{{ route('Admin.projects.index') }}"
-                class="text-decoration-none">
+            <a href="{{ route('Admin.projects.index') }}" class="text-decoration-none">
 
                 <div class="card border-left-primary shadow h-100 py-2">
 
@@ -73,8 +70,7 @@
         {{-- Skills --}}
         <div class="col-xl-3 col-md-6 mb-4">
 
-            <a href="{{ route('Admin.skills.index') }}"
-                class="text-decoration-none">
+            <a href="{{ route('Admin.skills.index') }}" class="text-decoration-none">
 
                 <div class="card border-left-success shadow h-100 py-2">
 
@@ -111,8 +107,7 @@
         {{-- Services --}}
         <div class="col-xl-3 col-md-6 mb-4">
 
-            <a href="{{ route('Admin.services.index') }}"
-                class="text-decoration-none">
+            <a href="{{ route('Admin.services.index') }}" class="text-decoration-none">
 
                 <div class="card border-left-info shadow h-100 py-2">
 
@@ -149,8 +144,7 @@
         {{-- Messages --}}
         <div class="col-xl-3 col-md-6 mb-4">
 
-            <a href="{{ route('Admin.messages.index') }}"
-                class="text-decoration-none">
+            <a href="{{ route('Admin.messages.index') }}" class="text-decoration-none">
 
                 <div class="card border-left-warning shadow h-100 py-2">
 
@@ -169,11 +163,9 @@
                                     {{ $statistics['messages'] }}
 
                                     @if ($statistics['unread_messages'] > 0)
-
                                         <span class="badge badge-danger ml-2">
                                             {{ $statistics['unread_messages'] }} New
                                         </span>
-
                                     @endif
 
                                 </div>
@@ -202,8 +194,7 @@
         {{-- Testimonials --}}
         <div class="col-xl-3 col-md-6 mb-4">
 
-            <a href="{{ route('Admin.testimonials.index') }}"
-                class="text-decoration-none">
+            <a href="{{ route('Admin.testimonials.index') }}" class="text-decoration-none">
 
                 <div class="card border-left-danger shadow h-100 py-2">
 
@@ -252,8 +243,7 @@
                         Latest Messages
                     </h6>
 
-                    <a href="{{ route('Admin.messages.index') }}"
-                        class="btn btn-primary btn-sm">
+                    <a href="{{ route('Admin.messages.index') }}" class="btn btn-primary btn-sm">
 
                         View All
 
@@ -282,23 +272,18 @@
                             <tbody>
 
                                 @forelse ($latestMessages as $message)
-
                                     <tr class="{{ !$message->is_read ? 'font-weight-bold bg-light' : '' }}">
 
                                         <td>
 
                                             @if ($message->is_read)
-
                                                 <span class="badge badge-secondary">
                                                     Read
                                                 </span>
-
                                             @else
-
                                                 <span class="badge badge-success">
                                                     New
                                                 </span>
-
                                             @endif
 
                                         </td>
@@ -308,10 +293,7 @@
                                         </td>
 
                                         <td>
-                                            {{ \Illuminate\Support\Str::limit(
-                                                $message->subject,
-                                                35
-                                            ) }}
+                                            {{ \Illuminate\Support\Str::limit($message->subject, 35) }}
                                         </td>
 
                                         <td>
@@ -335,15 +317,13 @@
 
                                     <tr>
 
-                                        <td colspan="5"
-                                            class="text-center py-4 text-muted">
+                                        <td colspan="5" class="text-center py-4 text-muted">
 
                                             No messages found.
 
                                         </td>
 
                                     </tr>
-
                                 @endforelse
 
                             </tbody>
@@ -369,8 +349,7 @@
                         Latest Projects
                     </h6>
 
-                    <a href="{{ route('Admin.projects.index') }}"
-                        class="btn btn-primary btn-sm">
+                    <a href="{{ route('Admin.projects.index') }}" class="btn btn-primary btn-sm">
 
                         View All
 
@@ -381,27 +360,25 @@
                 <div class="card-body">
 
                     @forelse ($latestProjects as $project)
-
                         <div class="d-flex align-items-center {{ !$loop->last ? 'mb-4' : '' }}">
 
                             @if ($project->thumbnail)
-
-                                <img
-                                    src="{{ asset('storage/' . $project->thumbnail) }}"
-                                    alt="{{ $project->title }}"
+                                <img src="{{ asset('storage/' . $project->thumbnail) }}" alt="{{ $project->title }}"
                                     class="rounded mr-3"
-                                    style="width: 65px; height: 50px; object-fit: cover;">
-
+                                    style="
+                                                width: 65px;
+                                                height: 50px;
+                                                min-width: 65px;
+                                                object-fit: cover;
+                                                flex-shrink: 0;
+                                            ">
                             @else
-
-                                <div
-                                    class="rounded bg-light d-flex align-items-center justify-content-center mr-3"
+                                <div class="rounded bg-light d-flex align-items-center justify-content-center mr-3"
                                     style="width: 65px; height: 50px; flex-shrink: 0;">
 
                                     <i class="fas fa-image text-gray-400"></i>
 
                                 </div>
-
                             @endif
 
                             <div class="flex-grow-1">
@@ -416,8 +393,7 @@
 
                             </div>
 
-                            <a href="{{ route('Admin.projects.edit', $project) }}"
-                                class="btn btn-warning btn-sm">
+                            <a href="{{ route('Admin.projects.edit', $project) }}" class="btn btn-warning btn-sm">
 
                                 <i class="fas fa-edit"></i>
 
@@ -436,7 +412,6 @@
                             </p>
 
                         </div>
-
                     @endforelse
 
                 </div>
