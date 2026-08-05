@@ -364,14 +364,8 @@
 
                             @if ($project->thumbnail)
                                 <img src="{{ asset('storage/' . $project->thumbnail) }}" alt="{{ $project->title }}"
-                                    class="rounded mr-3"
-                                    style="
-                                                width: 65px;
-                                                height: 50px;
-                                                min-width: 65px;
-                                                object-fit: cover;
-                                                flex-shrink: 0;
-                                            ">
+                                    class="rounded mr-3 flex-shrink-0" width="65" height="50"
+                                    style="object-fit: cover;">
                             @else
                                 <div class="rounded bg-light d-flex align-items-center justify-content-center mr-3"
                                     style="width: 65px; height: 50px; flex-shrink: 0;">
