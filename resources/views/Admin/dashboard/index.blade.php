@@ -363,7 +363,7 @@
                         <div class="d-flex align-items-center {{ !$loop->last ? 'mb-4' : '' }}">
 
                             @if ($project->thumbnail)
-                                <img src="{{ asset('storage/' . $project->thumbnail) }}" alt="{{ $project->title }}"
+                                <img src="/storage/{{ ltrim($project->thumbnail, '/') }}" alt="{{ $project->title }}"
                                     class="rounded mr-3 flex-shrink-0" width="65" height="50"
                                     style="object-fit: cover;">
                             @else
