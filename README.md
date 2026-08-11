@@ -35,7 +35,21 @@ The project includes a custom Content Management System (CMS) that allows websit
 
 ## 📸 Screenshots
 
-Screenshots of the website and administration dashboard will be added here.
+### 🏠 Home Page
+
+![Portfolio Home Page](docs/screenshots/home.png)
+
+### 💼 Projects Page
+
+![Portfolio Projects Page](docs/screenshots/projects.png)
+
+### ⚙️ Admin Dashboard
+
+![Portfolio Admin Dashboard](docs/screenshots/admin-dashboard.png)
+
+### 📂 Project Management
+
+![Portfolio Project Management](docs/screenshots/project-management.png)
 
 ## ⚙️ Installation
 
